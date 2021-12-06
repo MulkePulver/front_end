@@ -47,17 +47,17 @@ export default {
                     this.loaded = true;
                     })
                 .catch(() => {
-                    this.$emit('account');
+                    this.$emit('logOut');
                 });
         },
 
         verifyToken: function () {
-            return axios.post("/refresh", {refresh: localStorage.getItem("token_refresh")}, {headers: {}})
+            return axios.post("https://torinporin.herokuapp.com/refresh/", {refresh: localStorage.getItem("token_refresh")}, {headers: {}})
 				.then((result) => {
 					localStorage.setItem("token_access", result.data.access);		
 				})
 				.catch(() => {
-					this.$emit('account');
+					this.$emit('logOut');
 				});
         }
     },
