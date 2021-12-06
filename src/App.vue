@@ -3,7 +3,7 @@
 
     <div class="header">
 
-      <h1> BalanceAPP </h1>
+      <h1> App de prueba</h1>
       <nav>
         <button v-if="is_auth" v-on:click="loadHome"> Inicio </button>
         <button v-if="is_auth" v-on:click="loadAccount"> Cuenta </button>
