@@ -1,10 +1,11 @@
 <template>
 
     <div v-if="loaded" class="information">
-        <h1>Información de su cuenta</h1>
+        <h1>Informe lector anual</h1>
         <h2>Nombre: <span>{{name}}</span></h2>
-        <h2>Saldo: <span>{{balance}} COP </span></h2>
-        <h2>Correo electrónico: <span>{{email}}</span></h2>
+        <h2>Libros leídos: <span>{{balance}} este año </span></h2>
+        <h2>Libros leídos: <span>{{balance}} este mes</span></h2>
+        <h2>Libros pendientes por leer: <span>{{balance}} ¡Ánimo!</span></h2>
     </div>
 
 </template>
@@ -71,29 +72,39 @@ export default {
 
 <style>
     .information{
-        margin: 0;
         padding: 0%;
         width: 100%;
         height: 100%;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;    
-        align-items: center;
+        justify-content: right;    
+        align-items: right;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
     }
 
     .information h1{
         font-size: 60px;
-        color: #0f1316;
+        color: #ffffff;
+        font-size: 2rem; 
+        text-align: left;
+        margin-left: 15px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
 
     .information h2{
-        font-size: 40px;
-        color: #283747;
+        font-size: 1.7rem; 
+        color: #ffffff;
+        margin-left: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     .information span{
-        color: crimson;
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
         font-weight: bold;
+        margin-left: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 </style>

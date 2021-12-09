@@ -5,19 +5,19 @@
             <h2>Registrarse</h2>
 
             <form v-on:submit.prevent="processSignUp" >
-                <input type="text" v-model="user.username" placeholder="Username">
+                <input type="text" v-model="user.username" placeholder="Pseudónimo">
                 <br>
                 
-                <input type="password" v-model="user.password" placeholder="Password">
+                <input type="password" v-model="user.password" placeholder="Código de seguridad">
                 <br>
                 
-                <input type="text" v-model="user.name" placeholder="Name">
+                <input type="text" v-model="user.name" placeholder="Nombre no-ficticio">
                 <br>
 
-                <input type="email" v-model="user.email" placeholder="Email">
+                <input type="email" v-model="user.email" placeholder="Correo electrónico">
                 <br>
 
-                <input type="number" v-model="user.account.balance" placeholder="Initial Balance">
+                <input type="number" v-model="user.account.balance" placeholder="Libros leídos">
                 <br>
 
                 <button type="submit">Registrarse</button>
@@ -94,18 +94,21 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     }
 
     .container_signUp_user {
-        border: 3px solid  #283747;
-        border-radius: 10px;
-        width: 25%;
-        height: 60%;
+        border: 10px solid  #3C91E6;
+        border-radius: 50%;
+        width: 30%;
+        height: 80%;
         
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: cadetblue;
     }
 
     .signUp_user h2{
@@ -114,7 +117,7 @@ export default {
     }
 
     .signUp_user form{
-        width: 70%;
+        width: 60%;
         
     }
 
@@ -144,7 +147,7 @@ export default {
 
     .signUp_user button:hover{
         color: #E5E7E9;
-        background: crimson;
+        background: #3C91E6;
         border: 1px solid #283747;
     }
 

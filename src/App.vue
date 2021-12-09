@@ -3,7 +3,7 @@
 
     <div class="header">
 
-      <h1> App de prueba</h1>
+      <h1> Sisdia </h1>
       <nav>
         <button v-if="is_auth" v-on:click="loadHome"> Inicio </button>
         <button v-if="is_auth" v-on:click="loadAccount"> Cuenta </button>
@@ -25,7 +25,7 @@
     
 
     <div class="footer">
-      <h2>Por Andrés</h2>
+      <h2>Por Andrés, recuperación CICLO 3 Misión TIC</h2>
     </div>
 
   </div>
@@ -119,7 +119,8 @@ export default {
     height: 10vh; 
     min-height: 100px;
 
-    background-color: #283747 ;
+    background-color: #04395E;
+    border: 4px solid #13070C;
     color:#E5E7E9  ;
 
     display: flex;
@@ -128,8 +129,15 @@ export default {
   }
 
   .header h1{
-    width: 20%;
+    margin-left: 20px;
+    color: #524245;
+    border: 2px solid white;
+    border-radius: 33%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(176,177,156,1) 50%, rgba(252,176,69,1) 100%); 
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4.5rem;
   }
 
   .header nav {
@@ -144,18 +152,19 @@ export default {
   }
 
   .header nav button{
-    color: #E5E7E9;
-    background: #283747;
-    border: 1px solid #E5E7E9;
+        color: #b6bdc4;
+        background: #0B1D51;
+        border: 1px solid #E5E7E9;;
 
-    border-radius: 5px;
-    padding: 10px 20px;
+        border-radius: 5px;
+        padding: 10px 25px;
+        margin: 5px;
   }
 
   .header nav button:hover{
-    color: #283747;
-    background: #E5E7E9;
-    border: 1px solid #E5E7E9;
+        color: #E5E7E9;
+        background: #3C91E6;
+        border: 1px solid #283747;
   }
 
   
@@ -175,8 +184,8 @@ export default {
     height: 10vh;
     min-height: 100px; 
 
-    background-color: #283747;
-    color: #E5E7E9;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,121,1) 35%, rgba(0,212,255,1) 100%); 
 
   }
 
