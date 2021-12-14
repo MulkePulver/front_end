@@ -1,4 +1,6 @@
-# front_end
+# Sisdia - Recuperación Misión TIC
+
+# PARA OBSERVAR EL PRODUCTO FINAL DIRIGIRSE A: https://torinpo.herokuapp.com/user/home
 
 ## Project setup
 ```
